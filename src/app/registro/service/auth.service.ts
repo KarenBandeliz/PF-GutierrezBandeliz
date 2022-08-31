@@ -87,11 +87,6 @@ export class AuthService {
     return this.db.doc(`Users/${userCredential.uid}`).set(data)
 
   }
-  
-  getUserById(id:any){
-    return this.db.collection<any>('Users').doc(id).snapshotChanges().pipe(
-      map(action =>action.payload.data()))
-  }
 
   getRoles(): Promise<any>{ 
     return new Promise((resolve,reject) =>{
