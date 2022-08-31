@@ -1,0 +1,35 @@
+<div class="container">
+    <mat-toolbar>
+        <span>Estudiante</span>
+    
+    </mat-toolbar>
+
+    <mat-card class="mt">
+        <mat-grid-list *ngIf="student" cols="2" rowHeight="340px">
+            <mat-grid-tile  >
+                <mat-list class="list" >
+                    <mat-list-item>{{student?.name}}</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>{{student?.lastname}}</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>{{student?.email}}</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>{{student?.sex}}</mat-list-item>
+                </mat-list>
+            </mat-grid-tile>
+            <mat-grid-tile><img src="./assets/img/user.png" alt="user" width="250px" height="250px"></mat-grid-tile>
+          </mat-grid-list>
+          <div class="spinner" *ngIf="!student">
+            <mat-spinner></mat-spinner>
+          </div>
+          <div class="m-0">
+            <button type="submit" mat-raised-button color="primary" style="margin-top:20px; margin-right:20px">
+                Desinscribirme
+            </button> 
+            <button (click)="backBtn()"mat-raised-button style="margin-top:20px; ">
+                Volver
+            </button> 
+        </div>
+    </mat-card>
+
+</div>

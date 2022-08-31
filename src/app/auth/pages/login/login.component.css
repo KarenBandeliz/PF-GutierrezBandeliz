@@ -1,0 +1,46 @@
+.body{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    background-color:rgba(226, 251, 253, 0.603);
+}
+
+.login{
+    width: 100%;
+    max-width: 330px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.img{
+    width: 50%;
+}
+
+.wide{
+    width: 100%;
+}
+
+.button{
+    height: 50px;
+}
+
+.singup {
+    width: 100%;
+}
+.button-singup{
+    margin-bottom: 10px;
+    background:rgb(119, 108, 189);
+    color: white;
+    height: 50px;
+}
+
+.register{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0; 
+}
+
+.spinner{
+    margin: 0 auto;
+    }

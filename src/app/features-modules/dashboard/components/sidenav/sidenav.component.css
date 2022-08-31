@@ -1,0 +1,26 @@
+.sidenav-container {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: hidden;
+  }
+
+.mat-drawer-custom{
+    width: 12%;
+    background-color:#5ba1a19a;
+    color:whitesmoke;
+    padding: 16px;
+}
+
+
+.list-menu{
+  display:block;
+  overflow: hidden;
+}
+
+.btn-item{
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  color:white;
+
+}

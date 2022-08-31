@@ -1,0 +1,45 @@
+<div class="container">
+    <mat-toolbar>
+        <span>Editar Estudiante</span>
+    
+    </mat-toolbar>
+
+    <mat-card class="mt">
+        <form (ngSubmit)="onEdit()" [formGroup]="formEdit">
+            <mat-grid-list cols="4" rowHeight="70px">
+                <mat-grid-tile [colspan]="1" [rowspan]="1">      
+                    <mat-form-field class="example-full-width w" >
+                        <mat-label>Curso</mat-label>
+                        <input matInput formControlName="name" id="name">
+                      </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="3" [rowspan]="5" >
+                   <img src="./assets/img/user.png" alt="user" width="250px" height="250px">
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">      
+                    <mat-form-field class="example-full-width w" >
+                        <mat-label>Profesor</mat-label>
+                        <input matInput placeholder="teacher" formControlName="teacher" id="teacher">
+                      </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">      
+                    <mat-form-field class="example-full-width w" >
+                        <mat-label>Fecha de Inicio</mat-label>
+                        <input matInput placeholder="startDate" type="date"  formControlName="startDate" id="startDate">
+                      </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <button mat-raised-button (click)="goBack()" type="button" style="margin-right:20px">
+                        Volver
+                    </button> 
+                    <button [disabled]="formEdit.invalid" type="submit" mat-raised-button color="primary">
+                        Aceptar
+                    </button> 
+                  </mat-grid-tile>
+            </mat-grid-list>
+
+        </form>
+
+    </mat-card>
+
+</div>

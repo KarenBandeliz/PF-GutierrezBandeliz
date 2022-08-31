@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Alumnos",
+    "redirect": "/dashboard/students",
+    "icon": "school",
+    "auth": { "admin": true, "user": true }
+  },
+  {
+    "name": "Cursos",
+    "redirect": "/dashboard/courses",
+    "icon": "list",
+    "auth": { "admin": true, "user": true }
+  },
+  {
+    "name": "Usuarios",
+    "redirect": "/dashboard/",
+    "icon": "peoplealticon",
+    "auth": { "admin": true, "user": true }
+  }
+]

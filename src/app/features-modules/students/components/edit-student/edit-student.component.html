@@ -1,0 +1,55 @@
+<div class="container">
+    <mat-toolbar>
+        <span>Editar Estudiante</span>
+    
+    </mat-toolbar>
+
+    <mat-card class="mt">
+        <form (ngSubmit)="editStudent()" [formGroup]="formEdit">
+            <mat-grid-list cols="4" rowHeight="70px">
+                <mat-grid-tile [colspan]="1" [rowspan]="1">      
+                    <mat-form-field class="example-full-width w" >
+                        <mat-label>Email</mat-label>
+                        <input matInput formControlName="email" id="email">
+                      </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="3" [rowspan]="5" >
+                   <img src="./assets/img/user.png" alt="user" width="250px" height="250px">
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">      
+                    <mat-form-field class="example-full-width w" >
+                        <mat-label>Nombre</mat-label>
+                        <input matInput placeholder="nombre" formControlName="name" id="name">
+                      </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">      
+                    <mat-form-field class="example-full-width w" >
+                        <mat-label>Apellido</mat-label>
+                        <input matInput placeholder="apellido"  formControlName="lastname" id="lastname">
+                      </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-form-field class="w">
+                        <mat-label>Sexo</mat-label>
+                        <mat-select id="sex" formControlName="sex">
+                          <mat-option *ngFor="let item of sex" [value]="item" >
+                            {{item}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <button mat-raised-button (click)="goBack()" type="button" style="margin-right:20px">
+                        Volver
+                    </button> 
+                    <button [disabled]="formEdit.invalid" type="submit" mat-raised-button color="primary">
+                        Aceptar
+                    </button> 
+                  </mat-grid-tile>
+            </mat-grid-list>
+
+        </form>
+
+    </mat-card>
+
+</div>

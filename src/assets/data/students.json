@@ -1,0 +1,38 @@
+[
+  {
+    "Email": "karen@gmail.com",
+    "Nombre": "Karen",
+    "Apellido": "Gutiérrez",
+    "Sexo": "F"
+  },
+  {
+    "Email": "ram@gmail.com",
+    "Nombre": "Ramses",
+    "Apellido": "Hernández",
+    "Sexo": "M"
+  },
+  {
+    "Email": "paola@hotmail.com",
+    "Nombre": "Paola",
+    "Apellido": "Gutiérrez",
+    "Sexo": "F"
+  },
+  {
+    "Email": "Omar@gmail.com",
+    "Nombre": "Omar",
+    "Apellido": "Villa",
+    "Sexo": "M"
+  },
+  {
+    "Email": "gera@hotmail.com",
+    "Nombre": "Gerardo",
+    "Apellido": "García",
+    "Sexo": "M"
+  },
+  {
+    "Email": "pedro@gmail.com",
+    "Nombre": "Pedro",
+    "Apellido": "Fernandez",
+    "Sexo": "M"
+  }
+  ]

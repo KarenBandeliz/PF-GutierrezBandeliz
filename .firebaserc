@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cursos": {
+      "hosting": {
+        "3PFGutierrez": [
+          "cursos"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cursos"
+  }
+}

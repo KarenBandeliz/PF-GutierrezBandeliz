@@ -1,0 +1,19 @@
+<mat-drawer-container class="sidenav-container">
+    <mat-drawer  class="mat-drawer-custom" mode="side" opened>
+        <div class="list-menu" *ngFor="let item of menuItems">      
+            <button class="btn-icon" mat-icon-button [routerLink]=item.redirect>
+                <span class="material-icons" style="width:35px;">
+                    {{item.icon}}
+                </span>
+                <span>{{item.name}}</span>
+            </button>
+        </div>
+        <button class="btn-icon" (click)="logOutUser()" mat-icon-button [routerLink]="'/register/login'">
+            <span class="material-icons" style="width:35px;">
+                logout
+            </span>
+            <span>Cerrar Sesión</span>
+        </button>
+    </mat-drawer>
+    <mat-drawer-content><router-outlet></router-outlet></mat-drawer-content>
+  </mat-drawer-container>

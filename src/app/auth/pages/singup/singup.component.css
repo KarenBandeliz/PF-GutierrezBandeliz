@@ -1,0 +1,27 @@
+.singup-body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color:whitesmoke;
+}
+
+.singup-box{
+    width: 100%;
+    max-width: 330px;
+    text-align: center;
+}
+
+.singup-image-user{
+    width: 50%;
+}
+
+.singup-custom-w{
+    width: 100%;
+}
+
+.btn-singup{
+    background:slateblue;
+    color: white;
+    height: 50px;
+}
